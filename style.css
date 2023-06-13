@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 :root {
     --color-primary: #174d2f;
     --color-secondary: #5ABB7B;
@@ -26,38 +27,13 @@ body {
     background-color: var(--color-background);
 }
 
-main {
-    border-radius: 0px 0px 10px 10px;
-    margin: auto;
-    min-width: 300px;
-    max-width: 1000px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 2px black;
-    background-color: #ffffff; 
-}
-
 strong{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
 }
 
-.links{
-    color: var(--color-link);
-    font-weight: 600;
-}
-
-.links:hover{
-    color: var(--color-link-hover);
-    background-color: var(--color-link-hover-background);
-    border-radius: 3px;
-    padding: 2px;
-}
-
-.links::before{
-    content: "🔗";
-}
-
 .cabecalho {
-    padding: 10px;
+    padding: 1%;
+    min-width: 300px;
     height: 110px;
     background-image: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
     
@@ -69,7 +45,7 @@ strong{
     font-size: 2em;
     font-family: 'Bebas Neue';
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.651);
-    padding: 0px;
+    padding: 1%;
     margin: 0px;
 }
 
@@ -77,40 +53,48 @@ strong{
     text-align: center;
     color: white;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1rem;
     padding-top: 20px;
+    padding: 1%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .cabecalho-menu {
-    background-color: var(--color-primary);
-    padding: 10px;
     display: flex;
+    min-width: 300px;
+    background-color: var(--color-primary);
 }
 
-.home{
-    width: 40px;
-    height: 20px;
-}
-
+.home,
 .curiosidade{
-    width: 90px;
-    height: 20px;
+    min-width: 2%;
+    height: 25px; 
 }
 
 .contato{
-    width: 60px;
-    height: 20px;
+    min-width: 2%;
+    height: 25px; 
+}
+
+.home,
+.curiosidade,
+.contato{
+    position: relative;
+    padding-top: 5px;
+    text-align: center;
 }
 
 .cabecalho-menu-item:hover {
-    padding-top: 3px;
+    transition: 0.2s;
+    position: relative;
+    bottom: 8px;
     background-color: #76b691;
     box-shadow: 1px 1px 5px white;
 }
 
 .cabecalho-menu-item:active {
-    top: 2px;
+    position: relative;
+    bottom: 0px;
     background-color: #01d45d4d;
     border-radius: 6px;
     box-shadow: 1px 1px 5px white;
@@ -118,20 +102,29 @@ strong{
 
 .cabecalho-menu-item {
     border-radius: 6px;
-    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: Arial, verdana, Helvetica, sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
     color: aliceblue;
+}
+
+main {
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 900px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #ffffff; 
 }
 
 .titulo-artigo-1{
     color: var(--color-text);
     font-family: idroid;
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0;
     padding: 20px; 
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.493);
@@ -157,18 +150,32 @@ h2 {
     font-family: idroid;
     border-radius: 10px 0px 0px 10px;
     line-height: 1.5em;
-    width: 960px;
+    max-width: 900px;
     height: 35px;
     margin: auto;
     padding-left: 10px;
     margin-bottom: 10px;
 }
 
+.links{
+    color: var(--color-link);
+    font-weight: 600;
+}
+
+.links:hover{
+    color: var(--color-link-hover);
+    background-color: var(--color-link-hover-background);
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.links::before{
+    content: "🔗";
+}
 
 #listas{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 
 .lista2 {
@@ -185,10 +192,10 @@ h2 {
 .artirgo-2>h1{
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
     border-radius: 5px 5px 0px 0px;
-    padding-left: 10px ;
+    text-indent: 10px;
     line-height: 1.9em;
-    max-width: 991px;
-    min-width: 300px;
+    max-width: 900px;
+    min-width: 280px;
     color: white;
     background-color: #2FA866;
     height: 35px;
@@ -201,7 +208,7 @@ h2 {
     background-color: #C5EBD6;
     margin: auto;
     max-width: 990px;
-    min-width: 300px;
+    min-width: 280px;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.267);
 }
@@ -237,8 +244,8 @@ img{
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
-    max-width: 990px;
-    min-width: 400px;
+    max-width: 900px;
+    min-width: 280px;
     margin-bottom: 20px;
     justify-content: center;
     background-color: var(--color-primary);
