@@ -15,9 +15,13 @@ Espero que este projeto demonstre minha capacidade de criar sites e refletir o p
 A seguir, você encontrará os links para o site e as redes sociais do CursoEmVídeo:
 
 Site: https://www.cursoemvideo.com/
+
 YouTube: https://www.youtube.com/@CursoemVideo
+
 Twitter: https://twitter.com/cursosemvideo
+
 Facebook: https://www.facebook.com/CursosEmVideo/
+
 Instagram: https://www.instagram.com/cursoemvideo/
 
 Esses links irão direcioná-lo para as respectivas páginas, onde você poderá encontrar mais informações sobre o CursoEmVídeo e se conectar com eles por meio das redes sociais.
