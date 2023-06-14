@@ -32,8 +32,7 @@ main {
     box-shadow: 2px 2px 2px black;
     min-width: 300px;
     max-width: 900px;
-    margin: auto;
-    margin-bottom: 10px;
+    margin: auto auto 10px auto;
 }
 
 strong {
@@ -45,7 +44,6 @@ strong {
     min-width: 268px;
     height: 110px;
     padding: 15px;
-   
 }
 
 .cabecalho>h1 {
@@ -56,8 +54,7 @@ strong {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.651);
     margin: 0px;
     padding: 0.1%;
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1.5%;
 }
 
 .paragrafo-menu {
@@ -67,15 +64,16 @@ strong {
     font-weight: 200;
     font-size: 1rem;
     padding-top: 20px;
-    padding: 0.1%; 
+    padding: 0.1%;
 }
 
 .cabecalho-menu {
     background-color: var(--color-primary);
     display: flex;
-    height: 35px;
+    position: relative;
+    min-height: 35px;
+    max-height: 50px;
     min-width: 300px;
-   
 }
 
 .cabecalho-menu-item:hover {
@@ -99,9 +97,7 @@ strong {
     font-size: 1rem;
     font-weight: 700;
     height: 25px;
-    padding-top: 5px;
-    padding-right: 1%;
-    padding-left: 10px;
+    padding: 5px 1% 0px 1%;
 }
 
 .titulo-artigo-1 {
@@ -110,8 +106,8 @@ strong {
     text-align: center;
     font-size: 2rem;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.493);
-    margin: 0;
     padding: 20px;
+    margin: 0px;
 }
 
 .paragrafo-artigo {
@@ -135,8 +131,7 @@ h2 {
     border-radius: 10px 0px 0px 10px;
     max-width: 900px;
     height: 35px;
-    margin: auto;
-    margin-bottom: 10px;
+    margin: auto auto 10px auto;
     padding-left: 10px;
 }
 
@@ -195,23 +190,16 @@ h2 {
     max-width: 990px;
     min-width: 280px;
     margin: auto;
-    
 }
 
 .paragrafo-artigo {
     text-indent: 1em;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px 0px 20px 0px;
     margin: 10px;
 }
 
 article {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding: 20px 20px 5px 20px;
 }
 
 .imagem-androidH {
@@ -230,16 +218,15 @@ img {
     justify-content: center;
     max-width: 900px;
     min-width: 280px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    margin: auto;
+    padding: 20px 0px 20px 0px;
+    margin: auto auto 20px auto;
 }
 
 .rodape {
     background-color: #1A5A37;
     min-width: 300px;
-    height: 30px;
+    min-height: 35px;
+    max-height: 50px;
 }
 
 .rodape-texto {
