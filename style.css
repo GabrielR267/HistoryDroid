@@ -4,11 +4,19 @@
     --color-primary: #174d2f;
     --color-secondary: #5ABB7B;
     --color-background: #89CDA5;
+    --color-header-h1: white;
+    --color-menu-hover: #89CDA5;
+    --color-menu-active: #174d2f;
     --color-text: #1A5A37;
     --color-link: rgb(0, 100, 0);
     --color-link-hover: #ffffff;
     --color-link-background: rgb(0, 100, 0);
     --color-link-hover-background: #108d00;
+    --font-header:"Bebas Neue", Arial, sans-serif;
+    --font-header-text: Arial, Verdana, Helvetica, sans-serif;
+    --font-menu-item: Arial, Verdana, Helvetica, sans-serif;
+    --font-article-title: 'idroid', cursive;
+    --font-article-text: Arial, Verdana, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -19,11 +27,77 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+a {
     text-decoration: none;
 }
 
 body {
     background-color: var(--color-background);
+}
+
+strong {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+header {
+    background-image: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
+    min-width: 268px;
+    min-height: 110px;
+    padding: 15px;
+}
+
+header>h1 {
+    color: var(--color-header-h1);
+    font-family: var(--font-header);
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.651);
+    padding-bottom: 1.5%;
+}
+
+.header-text {
+    color: white;
+    font-family: var(--font-header-text);
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding: 0.1%;
+}
+
+.header-menu {
+    background-color: var(--color-primary);
+    display: flex;
+    position: relative;
+    min-height: 35px;
+    max-height: 50px;
+    min-width: 300px;
+}
+
+.header-menu-item {
+    color: aliceblue;
+    font-family: var(--font-menu-item);
+    font-size: 1rem;
+    font-weight: 700;
+    height: 25px;
+    padding: 5px 1% 0px 1%;
+}
+
+.header-menu-item:hover {
+    background-color: var(--color-menu-hover);
+    box-shadow: 1px 1px 5px white;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+.header-menu-item:active {
+    background-color: var(--color-menu-active);
+    box-shadow: 1px 1px 5px white;
+    border-radius: 6px;
+    position: relative;
+    top: 1px;
 }
 
 main {
@@ -35,74 +109,13 @@ main {
     margin: auto auto 10px auto;
 }
 
-strong {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+article {
+    padding: 20px 20px 5px 20px;
 }
 
-.cabecalho {
-    background-image: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
-    min-width: 268px;
-    height: 110px;
-    padding: 15px;
-}
-
-.cabecalho>h1 {
-    color: white;
-    font-family: 'Bebas Neue';
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.651);
-    margin: 0px;
-    padding: 0.1%;
-    padding-bottom: 1.5%;
-}
-
-.paragrafo-menu {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 200;
-    font-size: 1rem;
-    padding-top: 20px;
-    padding: 0.1%;
-}
-
-.cabecalho-menu {
-    background-color: var(--color-primary);
-    display: flex;
-    position: relative;
-    min-height: 35px;
-    max-height: 50px;
-    min-width: 300px;
-}
-
-.cabecalho-menu-item:hover {
-    background-color: #76b691;
-    box-shadow: 1px 1px 5px white;
-    border-radius: 6px;
-    transition: 0.4s;
-}
-
-.cabecalho-menu-item:active {
-    background-color: #01d45d4d;
-    box-shadow: 1px 1px 5px white;
-    border-radius: 6px;
-    position: relative;
-    top: 1px;
-}
-
-.cabecalho-menu-item {
-    color: aliceblue;
-    font-family: Arial, verdana, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    height: 25px;
-    padding: 5px 1% 0px 1%;
-}
-
-.titulo-artigo-1 {
+.article-title {
     color: var(--color-text);
-    font-family: "idroid", cursive;
+    font-family: var(--font-article-title);
     text-align: center;
     font-size: 2rem;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.493);
@@ -110,29 +123,15 @@ strong {
     margin: 0px;
 }
 
-.paragrafo-artigo {
+.article-text {
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 1rem;
     text-indent: 2em;
     line-height: 2em;
-    padding: 0px 0px 0px 20px;
-}
-
-h2 {
-    background-image: linear-gradient(90deg, #89CDA5, #ffffff00);
-    color: var(--color-text);
-    font-family: idroid, cursive;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.534);
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 1.5em;
-    border-radius: 10px 0px 0px 10px;
-    max-width: 900px;
-    height: 35px;
-    margin: auto auto 10px auto;
-    padding-left: 10px;
+    padding: 0px 0px 20px 30px;
+    margin: 10px;
 }
 
 .links {
@@ -151,24 +150,62 @@ h2 {
     content: "🔗";
 }
 
-#listas {
+img {
+    width: 100%;
+}
+
+h2 {
+    background-image: linear-gradient(90deg, #89CDA5, #ffffff00);
+    color: var(--color-text);
+    font-family: idroid, cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.534);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    border-radius: 10px 0px 0px 10px;
+    max-width: 900px;
+    height: 35px;
+    margin: auto auto 10px auto;
+    padding-left: 10px;
+}
+
+.imagem-androidH {
+    display: block;
+    max-width: 250px;
+    margin: auto;
+}
+
+/* iframe antes de ler o capitulo-17 do CursoEmVídeo:
+.video-android {
+    background-color: var(--color-primary);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    max-width: 900px;
+    min-width: 280px;
+    padding: 20px 0px 20px 0px;
+    margin: auto auto 20px auto;
+}*/
+
+/*Depois:*/
+.video-android {
+    position: relative;
+    background-color: var(--color-primary);
+    height: 0px;
+    margin: auto -20px 15px -20px;
+    padding-bottom: 59%
 }
 
-#lista1,
-#lista2 {
-    list-style-type: none;
-    padding-left: 20px;
+.video-android>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
-.lista>li::before {
-    content: "✅";
-    display: inline-block;
-    margin-right: 5px;
-}
+/*  Fim  */
 
-.artirgo-2>h1 {
+aside>h3 {
     background-color: #2FA866;
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
     color: white;
@@ -181,7 +218,7 @@ h2 {
     margin-top: 10px;
 }
 
-.artirgo-2 {
+aside {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #C5EBD6;
@@ -192,68 +229,64 @@ h2 {
     margin: auto;
 }
 
-.paragrafo-artigo {
-    text-indent: 1em;
-    padding: 0px 0px 20px 0px;
-    margin: 10px;
-}
+ /* Listas antes de ler o capitulo-17 do CursoEmVídeo:
 
-article {
-    padding: 20px 20px 5px 20px;
-}
-
-.imagem-androidH {
-    display: block;
-    max-width: 250px;
-    margin: auto;
-}
-
-img {
-    width: 100%;
-}
-
-.video-android {
-    background-color: var(--color-primary);
+#listas {
     display: flex;
-    justify-content: center;
-    max-width: 900px;
-    min-width: 280px;
-    padding: 20px 0px 20px 0px;
-    margin: auto auto 20px auto;
+    justify-content: space-around;
 }
 
-.rodape {
+#lista1,
+#lista2 {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.lista>li::before {
+    content: "✅ ";
+}*/
+
+   /*Depois: */
+ul {
+    padding-left: 25px;
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+    /*Fim*/
+
+footer {
     background-color: #1A5A37;
     min-width: 300px;
     min-height: 35px;
     max-height: 50px;
 }
 
-.rodape-texto {
+.footer-text {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
     padding-top: 5px;
 }
 
-.links-rodape {
+.footer-links {
     color: rgb(255, 255, 255);
     font-weight: 600;
     padding-right: 5px;
 }
 
 
-.links-rodape:hover {
+.footer-links:hover {
     background-color: rgb(250, 250, 250);
     color: #108d00;
     border-radius: 3px;
 }
 
-.links-rodape::before {
+.footer-links::before {
     content: "🔗";
 }
 
-.links-rodape:active {
+.footer-links:active {
     position: relative;
     top: 2px;
 }
