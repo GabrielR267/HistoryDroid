@@ -54,7 +54,7 @@ header>h1 {
     text-align: center;
     font-size: 2rem;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.651);
-    padding-bottom: 1.5%;
+    padding-bottom: .41em;
 }
 
 .header-text {
@@ -63,8 +63,7 @@ header>h1 {
     text-align: center;
     font-weight: 200;
     font-size: 1rem;
-    padding-top: 20px;
-    padding: 0.1%;
+    padding: .06em;
 }
 
 .header-menu {
@@ -119,7 +118,7 @@ article {
     text-align: center;
     font-size: 2rem;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.493);
-    padding: 20px;
+    padding: 16px;
     margin: 0px;
 }
 
@@ -128,9 +127,9 @@ article {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 1rem;
-    text-indent: 2em;
+    text-indent: 1em;
     line-height: 2em;
-    padding: 0px 0px 20px 30px;
+    padding: 15px 10px;
     margin: 10px;
 }
 
@@ -143,7 +142,6 @@ article {
     background-color: var(--color-link-hover-background);
     color: var(--color-link-hover);
     border-radius: 3px;
-    padding: 2px;
 }
 
 .links::before {
@@ -171,7 +169,7 @@ h2 {
 
 .imagem-androidH {
     display: block;
-    max-width: 250px;
+    max-width: 350px;
     margin: auto;
 }
 
@@ -202,8 +200,18 @@ h2 {
     width: 90%;
     height: 90%;
 }
-
 /*  Fim  */
+
+aside {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C5EBD6;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+    border-radius: 0px 0px 5px 5px;
+    max-width: 990px;
+    min-width: 280px;
+    margin: auto;
+}
 
 aside>h3 {
     background-color: #2FA866;
@@ -216,17 +224,6 @@ aside>h3 {
     min-width: 280px;
     height: 35px;
     margin-top: 10px;
-}
-
-aside {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #C5EBD6;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
-    border-radius: 0px 0px 5px 5px;
-    max-width: 990px;
-    min-width: 280px;
-    margin: auto;
 }
 
  /* Listas antes de ler o capitulo-17 do CursoEmVídeo:
