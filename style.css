@@ -24,14 +24,14 @@
     src: url('fontes/idroid.otf') format('truetype');
 }
 
-@media (min-width: 601px) {
+@media (min-width: 501px) {
     h2 {
         font-size: 1.4rem;
         line-height: 1.5em;
     }
 }
 
-@media  (max-width: 600px){
+@media  (max-width: 500px){
     h2 {
         font-size: 1em;
         line-height: 1.9em;
