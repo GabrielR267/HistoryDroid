@@ -12,7 +12,7 @@
     --color-link-hover: #ffffff;
     --color-link-background: rgb(0, 100, 0);
     --color-link-hover-background: #108d00;
-    --font-header:"Bebas Neue", Arial, sans-serif;
+    --font-header: "Bebas Neue", Arial, sans-serif;
     --font-header-text: Arial, Verdana, Helvetica, sans-serif;
     --font-menu-item: Arial, Verdana, Helvetica, sans-serif;
     --font-article-title: 'idroid', cursive;
@@ -22,6 +22,21 @@
 @font-face {
     font-family: 'idroid';
     src: url('fontes/idroid.otf') format('truetype');
+}
+
+@media (min-width: 601px) {
+    h2 {
+        font-size: 1.4rem;
+        line-height: 1.5em;
+    }
+}
+
+@media  (max-width: 600px){
+    h2 {
+        font-size: 1em;
+        line-height: 1.9em;
+        
+    }
 }
 
 * {
@@ -157,9 +172,7 @@ h2 {
     color: var(--color-text);
     font-family: idroid, cursive;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.534);
-    font-size: 1.4rem;
     font-weight: 700;
-    line-height: 1.5em;
     border-radius: 10px 0px 0px 10px;
     max-width: 900px;
     height: 35px;
@@ -200,6 +213,7 @@ h2 {
     width: 90%;
     height: 90%;
 }
+
 /*  Fim  */
 
 aside {
@@ -226,7 +240,7 @@ aside>h3 {
     margin-top: 10px;
 }
 
- /* Listas antes de ler o capitulo-17 do CursoEmVídeo:
+/* Listas antes de ler o capitulo-17 do CursoEmVídeo:
 
 #listas {
     display: flex;
@@ -243,14 +257,15 @@ aside>h3 {
     content: "✅ ";
 }*/
 
-   /*Depois: */
+/*Depois: */
 ul {
     padding-left: 25px;
     list-style-type: '\2714\0020\0020';
     columns: 2;
     list-style-position: inside;
 }
-    /*Fim*/
+
+/*Fim*/
 
 footer {
     background-color: #1A5A37;
